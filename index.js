@@ -1,7 +1,7 @@
 const http = require('http');
 
 const server = http.createServer((req, res) => {
-  res.end(`It Works!! Path Hit: ${req.url}\n`);
+  res.end(JSON.stringify(process.env));
 });
 
 const port = process.env.PORT || 8000;
