@@ -1,0 +1,21 @@
+{
+    "name": "Simple Web",
+    "env": {
+        "NODE_ENV": "production",
+        "TALK_SESSION_SECRET": {
+            "description": "The session secret",
+            "generator": "secret"
+        },
+        "TALK_FACEBOOK_APP_ID": {
+            "value": "",
+            "required": true
+        },
+        "TALK_FACEBOOK_APP_SECRET": {
+            "value": "",
+            "required": true
+        },
+        "TALK_ROOT_URL": ""
+    },
+    "image": "heroku/nodejs",
+    "success_url": "/admin/setup"
+}
