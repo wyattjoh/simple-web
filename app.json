@@ -14,7 +14,9 @@
             "value": "",
             "required": true
         },
-        "TALK_ROOT_URL": ""
+        "TALK_ROOT_URL": {
+            "required": false   
+        }
     },
     "image": "heroku/nodejs",
     "success_url": "/admin/setup"
