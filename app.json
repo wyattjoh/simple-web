@@ -18,6 +18,20 @@
             "required": false   
         }
     },
+    "addons": [
+      {
+        "plan": "mongolab:sandbox",
+        "as": "MONGO"
+      },
+      {
+        "plan": "heroku-redis:hobby-dev",
+        "as": "REDIS"
+      },
+      {
+        "plan": "postmark:10k",
+        "as": "POSTMARK"
+      }
+    ],
     "image": "heroku/nodejs",
     "success_url": "/admin/setup"
 }
