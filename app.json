@@ -1,5 +1,5 @@
 {
-    "name": "Simple Web",
+    "name": "The Coral Project: Talk",
     "env": {
         "NODE_ENV": "production",
         "TALK_SESSION_SECRET": {
@@ -14,8 +14,20 @@
             "value": "",
             "required": true
         },
-        "TALK_ROOT_URL": {
-            "required": false   
+        "TALK_SMTP_EMAIL": {
+            "required": false
+        },
+        "TALK_SMTP_USERNAME": {
+            "required": false
+        },
+        "TALK_SMTP_PASSWORD": {
+            "required": false
+        },
+        "TALK_SMTP_HOST": {
+            "required": false
+        },
+        "TALK_SMTP_PORT": {
+            "required": false
         }
     },
     "addons": [
