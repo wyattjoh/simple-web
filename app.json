@@ -24,7 +24,7 @@
         "as": "MONGO"
       },
       {
-        "plan": "heroku-redis:hobby-dev",
+        "plan": "rediscloud:30",
         "as": "REDIS"
       },
       {
