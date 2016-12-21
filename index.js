@@ -1,11 +1,17 @@
-const http = require('http');
+const pkg = require('./package.json');
+const express = require('express');
+const app = express();
 
-const server = http.createServer((req, res) => {
-  res.end('Simple demo completed! You\'re currently running v1.0.2.');
+app.use((req, res) => {
+  res.json(pkg);
 });
 
 const port = process.env.PORT || 8000;
 
-server.listen(port, () => {
-  console.log(`Server listening on: http://localhost:${port}`);
+app.listen(port, (err) => {
+  if (err) {
+    throw err;
+  }
+
+  console.log(`Server listening on port ${port}`);
 });
